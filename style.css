@@ -33,6 +33,11 @@ a, .subtext {
     font-size: 18px;
 }
 
+a {
+    padding: 10px 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
 ul {
     list-style-type: none;
     display: flex;
@@ -66,13 +71,23 @@ ul {
     color: white;
     padding: 8px 4px;
     border-radius: 12px;
-    border: white;
+    border: solid 1px white;
     font-weight: bold;
     font-size: 16px;
+    transition: background-color 0.3s;
+    cursor: pointer;
 }
 
 .top-signup {
     border: none;
+}
+
+a:hover, button:hover {
+    background-color: #e74c3c;
+}
+
+a:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .opener .right {
@@ -158,12 +173,36 @@ ul {
 
 
 .signup-sec {
-    padding: 48px 120px 48px 160px;
+    padding: 100px 120px 100px 160px;
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 128px;
+    gap: 176px;
+    background-color: #3882f6;
+    height: 160px;
+    border-radius: 10px;
 }
 
+.container .left {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
 
+.container .left .top {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer {
+    padding: 36px 120px 36px 160px;
+    text-align: center;
+    background-color: #1F2937;
+    color: white;
+    font-size: 18px;
+}
 
