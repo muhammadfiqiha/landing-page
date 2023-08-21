@@ -1,22 +1,25 @@
 body {
     min-height: 100vh;
     margin: 0;
+    padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    flex-direction: column;
 }
+
+
+
 
 .header {
     background-color: #1F2937;
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
+    padding: 16px 120px 16px 160px;
 }
+
+
+
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 
 .logo {
@@ -24,7 +27,7 @@ body {
     font-size: 24px;
 }
 
-a {
+a, .subtext {
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
@@ -33,18 +36,95 @@ a {
 ul {
     list-style-type: none;
     display: flex;
-    gap: 16px;
+    gap: 32px;
 }
 
+
+
 .opener {
+    padding: 96px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.opener .left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .main-title {
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: 800;
     color: #f9faf8;
 }
+
+button {
+    width: 120px;
+    background-color: #3882f6;
+    color: white;
+    padding: 8px 4px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+
+.opener .right {
+    flex-shrink: 0;
+    width: 50%;
+}
+
+.opener .right .p-hold {
+    display: flex;
+    background-color: gray;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+.content-sec {
+    padding: 48px 120px 48px 160px;
+    text-align: center;
+}
+
+.content-title {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    gap: 16px;
+}
+
+.desc {
+    color: gray;
+    font-size: 18px;
+}
+
+.img {
+    display: flex;
+    height: 160px;
+    width: 160px;
+    border: solid 3px blue;
+    border-radius: 16px;
+}
+
+
 
